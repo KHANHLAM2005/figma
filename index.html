@@ -3,9 +3,257 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset CSS -->
+    <link rel="stylesheet" href="./Css/reset.css" />
+    <!-- Nhúng font -->
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./Css/style.css" />
     <title>figma</title>
   </head>
-  <body>
-    <h1>Dự án mới với figma</h1>
+  <body style="height: 10000px">
+    <!-- Code phần header -->
+    <header class="header fixed">
+      <div class="main-content">
+        <div class="body">
+          <!-- Logo -->
+          <img
+            src="./img/logo.png"
+            alt="logoApple"
+            class="logo"
+            width="150px"
+            height="50px"
+          />
+          <!-- Các nút điều hướng web  -->
+          <nav class="nav">
+            <ul>
+              <li class="active">
+                <a href="#! ">Home</a>
+              </li>
+              <li>
+                <a href="#!">Học tập</a>
+              </li>
+              <li>
+                <a href="#!">Rèn Luyện</a>
+              </li>
+              <li>
+                <a href="#!">Cá nhân</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Nút đăng nhập -->
+          <div class="action">
+            <a href="#!" class="btn btn-sign-up">Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Phần main: nội dung chính của trang web-->
+    <main>
+      <div class="main">
+        <!-- Phần hero -->
+        <div class="hero">
+          <div class="main-content">
+            <div class="body">
+              <!-- Phần bên trái -->
+              <div class="media-block">
+                <!--1. Bức ảnh -->
+                <img
+                  src="./img/anh1.webp"
+                  alt="Ảnh quản trường Ba Đình-Hà Nội"
+                  class="img"
+                  width="500px"
+                />
+                <!--2. box nội dung -->
+                <div class="hero-summary">
+                  <!-- gồm 2 phần: icon và nội dung -->
+                  <!-- Nội dung 1 -->
+                  <div class="item">
+                    <!-- Phần icon -->
+                    <div class="icon">
+                      <img src="./img/Orion_page.png" alt="icon1" />
+                    </div>
+                    <!-- Phần nội dung -->
+                    <div class="info">
+                      <p class="label">Nội dung</p>
+                      <p class="title">Nội dung</p>
+                    </div>
+                  </div>
+                  <!-- Nội dung 2 -->
+                  <div class="item">
+                    <!-- Phần icon -->
+                    <div class="icon">
+                      <img src="./img/Orion_code-window.svg" alt="icon2" />
+                    </div>
+                    <!-- Phần nội dung -->
+                    <div class="info">
+                      <p class="label">Nội dung</p>
+                      <p class="title">Nội dung</p>
+                    </div>
+                  </div>
+                  <!-- Nội dung 3 -->
+                  <div class="item">
+                    <!-- Phần icon -->
+                    <div class="icon">
+                      <img src="./img/layer1.png" alt="icon3" />
+                    </div>
+                    <!-- Phần nội dung -->
+                    <div class="info">
+                      <p class="label">Nội dung</p>
+                      <p class="title">Nội dung</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Phần bên phải -->
+              <div class="content-block">
+                <h1 class="heading">Tiêu đề thông báo</h1>
+                <p class="desc">Nội dung thông báo:</p>
+                <!-- Khối chứa công cụ -->
+                <div class="cta-ground">
+                  <!-- Nút ấn để đọc chi tiết -->
+                  <a href="#!" class="btn hero-cta">Đọc chi tiết</a>
+                  <!-- Nút ấn để xem video nếu có -->
+                  <button class="watch-video">
+                    <div class="icon">
+                      <img src="./img/Polygon 2.png" alt="icon" />
+                    </div>
+                    <span>Watch video</span>
+                  </button>
+                </div>
+                <p class="desc">Đề nghị học sinh đọc kỉ nội dung thông báo</p>
+                <p class="desc start">
+                  <strong>Lớp:</strong>12C1<strong>Sỉ số:</strong> xxx
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Phần popular -->
+        <div class="popular">
+          <div class="main-content">
+            <!-- Khối bên trên -->
+            <div class="popular-top">
+              <!-- Phần bên trái -->
+              <div class="info">
+                <h2 class="heading-lv2">Thông tin hoạt động Đoàn</h2>
+                <p class="desc">Nội dung thông báo</p>
+              </div>
+              <!-- Phần bên phải -->
+              <div class="controls">
+                <!-- Nút bấm thứ nhất -->
+                <button class="controls-btn">
+                  <img src="./img/Polygon 2.png" alt="nút lùi bài bài" />
+                </button>
+                <!-- Nút bấm thứ 2 -->
+                <button class="controls-btn">
+                  <img src="./img/Polygon 2.png" alt="nút chuyển bài" />
+                </button>
+              </div>
+            </div>
+            <!-- Khối bên dưới -->
+            <div class="course-list">
+              <!-- Khối 1 -->
+              <div class="course-item">
+                <!-- Phần trên: ảnh -->
+                <a href="#!">
+                  <img
+                    src="./img/poplice.jpg"
+                    alt="Ảnh hoạt động"
+                    class="thumb"
+                    width="300px"
+                /></a>
+                <!-- Phần dưới: Nội dung -->
+                <div class="info">
+                  <!-- Phần 1: Tên thông báo +Nút xem chi tiết -->
+                  <div class="head">
+                    <!-- Phần tiêu đề -->
+                    <h3 class="title" class="line-clamp">Công an nhân dân</h3>
+                    <!-- Phần nút -->
+                    <div class="rating">
+                      <img src="./img/Polygon 2.png" alt="" class="start" />
+                      <span class="value">5/3/2024</span>
+                    </div>
+                  </div>
+                  <!-- Phần 2 -->
+                  <p class="desc">Nội dung</p>
+                  <!-- Phần 3: nút bấm -->
+                  <div class="foot">
+                    <span class="price">Lưu ý</span>
+                    <button class="btn btn-book">Xem chi tiết</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Khối 2 -->
+              <div class="course-item">
+                <!-- Phần trên: ảnh -->
+                <a href="!#">
+                  <img
+                    src="./img/t01.jpg"
+                    alt="Ảnh hoạt động"
+                    class="thumb"
+                    width="300px"
+                /></a>
+                <!-- Phần dưới: Nội dung -->
+                <div class="info">
+                  <!-- Phần 1: Tên thông báo +Nút xem chi tiết -->
+                  <div class="head">
+                    <!-- Phần tiêu đề -->
+                    <h3 class="title" class="line-clamp">
+                      Học Viện An Ninh Nhân Dân
+                    </h3>
+                    <!-- Phần nút -->
+                    <div class="rating">
+                      <img src="./img/Polygon 2.png" alt="" class="start" />
+                      <span class="value">24/9/2023</span>
+                    </div>
+                  </div>
+                  <!-- Phần 2 -->
+                  <p class="desc">Nội dung</p>
+                  <!-- Phần 3: nút bấm -->
+                  <div class="foot">
+                    <span class="price">Lưu ý</span>
+                    <button class="btn btn-book">Xem chi tiết</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Khối 3 -->
+              <div class="course-item">
+                <!-- Phần trên: ảnh -->
+                <a href="#!">
+                  <img
+                    src="./img/t011.jpeg"
+                    alt="Ảnh hoạt động"
+                    class="thumb"
+                    width="300px"
+                /></a>
+                <!-- Phần dưới: Nội dung -->
+                <div class="info">
+                  <!-- Phần 1: Tên thông báo +Nút xem chi tiết -->
+                  <div class="head">
+                    <!-- Phần tiêu đề -->
+                    <h3 class="title">
+                      <p class="line-clamp">Khai giảng năm học 2022-2023</p>
+                    </h3>
+                    <!-- Phần nút -->
+                    <div class="rating">
+                      <img src="./img/Polygon 2.png" alt="" class="start" />
+                      <span class="value">15/9/2022</span>
+                    </div>
+                  </div>
+                  <!-- Phần 2 -->
+                  <p class="desc">Nội dung</p>
+                  <!-- Phần 3: nút bấm -->
+                  <div class="foot">
+                    <span class="price">Lưu ý</span>
+                    <button class="btn btn-book">Xem chi tiết</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
